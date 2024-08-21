@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Logs</title>
+    <link rel="stylesheet" href="css/transaction.css">
+    <style type="text/css">
+        .button {
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+li {
+    display: inline-flex;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <li><a type="button" class="button" href="home.html">Home</a></li>
+    <main>
+        <h1>TRANSACTION LOGS</h1>
+        <form method="POST">
+            <div class="fline">
+                <input type="button" value="INR">
+                <input type="text" placeholder="Amount" name="amt" pattern="[0-9]{1,}">
+            </div>
+            <div class='form-grp'>
+                <select name="pur" id="dropdown">
+                    <option value="Select" disabled selected>PURPOSE</option>
+                    <option value="Education">Education</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Donation">Donation</option>
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Other">Others</option>
+                </select>
+            </div>
+            <div class="sbt">
+                <input type="submit" formaction="transaction-log.php" value="Update LOG">
+                <input type="submit" formaction="select-log.html" value="View LOG">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

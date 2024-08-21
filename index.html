@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/landing.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Expense Manager</title>
+</head>
+<body>
+  <div class="banner">
+    <div id="menu-outer">
+      <div class="text" style="float: left;">EXPENSE MANAGER</div>
+       <div class="table">
+            <ul id="horizontal-list">
+                <li><a type="button" class="button btn " href="#about"><i class="fa fa-info"> About Us</i></a></li>
+                <li><a type="button" class="button btn " href="#team"><i class="fa fa-users"> Team</i></a></li>
+                <li><a type="button" class="button btn " href="#contact"><i class="fa fa-comment"> Contact</i></a></li>
+                <li><a type="button" class="button btn " href="register.php"><i class="fa fa-sign-in"> Signup</i></a></li>
+                <li><a type="button" class="button btn " href="login.php"><i class="fa fa-user"> Login</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+  
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <h1>About</h1>
+      <div class="block"></div>
+      <p class="mainpara"><strong>
+      Software to manage the expense claim, authorization, audit and repayment processes can be obtained from organizations that provide a licensed software, implementation and support service, or alternatively, from software as a service (SaaS) providers. SaaS providers offer on-demand web-based applications managed by a third party to improve the productivity of expense management.</strong></p>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <h3>Our Process</h3><div class="block"></div>
+        <p class="insidepara">Our Process is to help the users to manage their expenses. We provide users different Categories for their savings.</p>
+      </div>
+      <div class="six columns">
+        <h3>Our Approach</h3><div class="block"></div>
+        <p class="insidepara">Our Approach is to first get to the middle class people as the most usage of this can be taken by them, as they have to manage several things at a time.</p>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <h3>Our Goal</h3><div class="block"></div>
+          <p class="insidepara">Our Goal is to reach to the middle and lower class people and want to make them learn about the savings of money for their better future plans.</p>
+        </div>
+        <div class="six columns">
+          <h3>Our Mission</h3><div class="block"></div>
+          <p class="insidepara">Our Mission is to make people grow and want to make aware of the money savings advatanges and wants to finish the poverty.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <h1 align="center">Meet the Team</h1>
+      <div class="block"></div> 
+      <div class="row">
+            <strong>
+                <form action="configuration.php" method="GET">
+                <div  style="float: left; width: 50%;">
+                    <a class="buttons" role="button" href=""><img class="fa fa-user" src="img/Om.png">mark collins barasa</a><br>
+                    
+                </div>
+                </form>
+            </strong>
+        </div>
+  </div>
+</section>
+
+
+
+<!-- Contact Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+<section id="contact">
+  <div class="container">
+    <h1>Contact</h1>
+    <div class="block"></div>
+    <form action="contact.php" method="post" id="contact_form">
+    <div class="name">
+      <label for="name"></label>
+      <input type="text" placeholder="My name is" name="name" id="name_input" required>
+    </div>
+    <div class="email">
+      <label for="email"></label>
+      <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+    </div>
+    <div class="telephone">
+      <label for="name"></label>
+      <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+    </div>
+    <div class="subject">
+      <label for="subject"></label>
+      <select placeholder="Subject line" name="subject" id="subject_input" required>
+        <option disabled hidden selected>Subject line</option>
+        <option>I'd like to start a project</option>
+        <option>I'd like to ask a question</option>
+        <option>I'd like to make a proposal</option>
+      </select>
+    </div>
+    <div class="message">
+      <label for="message"></label>
+      <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+    </div>
+    <div class="submit">
+      <input type="submit" value="Send Message" id="form_button" />
+    </div>
+  </form><!-- // End form -->
+</div><!-- // End #container -->
+  </div>
+</section>
+<!-- Footer Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+
+<footer>
+  <div class="container">
+    <div class="nine columns">
+      <p>Created By mark barasa</p>
+    </div>
+    <div class="three columns"> <span class="typcn typcn-social-facebook-circular socialIcons"></span> <span class="typcn typcn-social-instagram-circular socialIcons"></span> <span class="typcn typcn-social-google-plus-circular socialIcons"></span> <span class="typcn typcn-social-linkedin-circular socialIcons"></span> </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+

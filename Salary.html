@@ -1,0 +1,111 @@
+<?php
+session_start();
+$total = $_SESSION["addexp"];
+$left = $_SESSION["savings"];
+$salary = $_SESSION["salary"];
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function add_bill() {
+                var salary = 
+                    document.forms["addbill"]["Salary"];
+  
+                if (salary.value == "") {
+                    window.alert("Please enter Salary !");
+                    salary.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+  
+        <style>
+            div {
+                box-sizing: border-box;
+                float: left;
+                align-content: center;
+                align-items: center;
+            }
+  
+            form {
+                margin: 0 auto;
+                width: 600px;
+            }
+
+            body {
+    background: #594F4F;
+    background: -moz-linear-gradient(-45deg, #1d4946  10%, #594F4F 100%);
+    background: -webkit-linear-gradient(-45deg, #1d4946  10%, #594F4F    100%);
+    background: linear-gradient(200deg, #1d4946  10%, #594F4F 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4946 ', endColorstr='594F4F   ', GradientType=1 );
+}
+.main {
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 8%;
+    padding: 40px;
+    
+}
+.hero {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+input {
+    margin-top: -20px;
+    margin-left: 30%;
+    display: block;
+    width: 50%;
+    padding: 8px;
+}
+
+ul {
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    padding: 20px;
+}
+p{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.button {
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    font-size: 140%;
+    padding: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 2%;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+li {
+    display: inline-flex;
+    width: 100%;
+}
+        </style>
+    </head>
+    <body>
+        <li><a type="button" class="button" href="home.html">Home</a></li>
+        <div class="main">
+        <h1>UPDATE SALARY</h1>
+        <form name="addbill" action="Salary.php" onsubmit="return add_bill()" method="POST">
+            <p>Salary : <input type="number" size="15" name="salary" min="1000" /></p>
+            <p><input type="submit" name="Submit" align="center" /></p>
+        </form></div>
+    </body>
+</html>

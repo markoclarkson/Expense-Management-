@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Logs</title>
+    <link rel="stylesheet" href="css/transaction.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- font fetched from google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+    <style type="text/css">
+    	.button {
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+li {
+    display: inline-flex;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+<li><a type="button" class="button" href="home.html">Home</a></li>
+    <main>
+        <h1>SELECT LOGS</h1>
+        <form method="POST">
+            <div class='form-grp'>
+                <select name="month" id="dropdown">
+                    <option value="%" disabled selected>MONTH</option>
+                    <option value="%">ALL</option>
+                    <option value="01">JANUARY</option>
+                    <option value="02">FEBRUARY</option>
+                    <option value="03">MARCH</3option>
+                    <option value="04">APRIL</option>
+                    <option value="05">MAY</option>
+                    <option value="06">JUNE</option>
+                    <option value="07">JULY</option>
+                    <option value="08">AUGUST</option>
+                    <option value="09">SEPTEMBER</option>
+                    <option value="10">OCTOBER</option>
+                    <option value="11">NOVEMBER</option>
+                    <option value="12">DECEMBER</option>
+                </select>
+            </div>
+            <div class= 'form-grp'>
+                <select name="year" id="dropdown">
+                    <option value="%" disabled selected>YEAR</option>
+                    <option value="%">ALL</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</3option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                </select>
+            </div>
+                <div class="sbt">
+                    <input type="submit" formaction="viewlog.php" value="GO">
+                    <!-- submit button for exporting logs -->
+                </div>
+        </form>
+    </main>
+
+
+</body>
+</html>
