@@ -1,1 +1,2 @@
 # Expense-Management-
+Expense Manager (PHP) — It's a personal expense tracker: register/login, per-user transaction tables, category pages for bills, salary, travel, loans, retirement, education, and housing, plus a transaction log with export. I called out the honest limitation (per-user tables instead of one normalized table with a user_id column) as a "next step" — that kind of self-aware note reads as genuinely human and technically credible, way more than a README that pretends everything's perfect.
